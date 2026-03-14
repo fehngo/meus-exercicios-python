@@ -1,0 +1,5 @@
+print('A finalidade desse programa é calcular o descontro de um produto')
+preco = float(input('Qual o valor do produto?: '))
+porcentagem = float(input('Qual a porcentagem do desconto?: '))
+novo = preco - (preco * porcentagem / 100)
+print('O novo valor do produto após o descontro sera {:.2f} R$'.format(novo))
