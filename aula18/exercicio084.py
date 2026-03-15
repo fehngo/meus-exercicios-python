@@ -7,9 +7,10 @@ dados = list()
 
 while True:
     dados.append(input("Digite o nome: "))
+
     while True:
         try:
-            dados.append(int(input("Digite o peso: ")))
+            dados.append(float(input("Digite o peso: ")))
             break
         except ValueError:
             print("Digite um número inteiro!")
@@ -21,8 +22,6 @@ while True:
         decisao = input("Deseja continuar?[S/N]: ").upper().strip()
         if decisao in "SN":
             break
-        else:
-            continue
 
     if decisao == "N":
         break
@@ -46,7 +45,7 @@ for d in pessoas:
     elif d[1] == maior_peso and d[0] != pessoa_pesada[0]:
         pessoa_pesada.append(d[0])
 
-print(f"O maior peso é {maior_peso} e percente a {pessoa_pesada}")
+print(f"O maior peso é {maior_peso} e pertence a {pessoa_pesada}")
 
 ## Listar pessoas mais leves
 
