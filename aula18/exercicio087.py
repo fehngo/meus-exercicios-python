@@ -25,7 +25,9 @@ for linha in matriz:
 
 maior2 = max(matriz[1])
 
-soma3 = matriz[0][2] + matriz[1][2] + matriz[2][2]
+soma3 = 0
+for linha in matriz:
+    soma3 += linha[2]
 
 print(f"A soma dos valores pares é {soma_pares}")
 print(f"A soma dos valores da terceira coluna é {soma3}")
