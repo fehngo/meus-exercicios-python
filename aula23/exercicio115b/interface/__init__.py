@@ -1,7 +1,3 @@
-# Importar Sleep
-from time import sleep
-
-
 # Criar função leia int
 def leia_int(msg):
     while True:
@@ -35,17 +31,7 @@ def menu(*funcoes):
         while True:
             escolha = leia_int("Escolha uma das opções acima: ")
             if escolha <= len(funcoes):
-                break
+                return escolha
             else:
                 print("Opção inválida, escolha uma das opções acima!")
                 continue
-
-        if escolha == 1:
-            cabecalho("Opção 1")
-            sleep(1.25)
-        elif escolha == 2:
-            cabecalho("Opção 2")
-            sleep(1.25)
-        elif escolha == 3:
-            print("Saindo do Programa... Até logo!")
-            break
