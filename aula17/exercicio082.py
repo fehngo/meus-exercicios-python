@@ -1,6 +1,4 @@
-print(
-    "Este exercício tem finalidade de ler varios números e separar em lista de pares e impares!"
-)
+print("Este exercício tem finalidade de ler varios números e separar em lista de pares e impares!")
 
 numeros = list()
 pares = list()

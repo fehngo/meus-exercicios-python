@@ -7,15 +7,13 @@ try:
     resposta = ""
 
     while resposta != "5":
-        resposta = input(
-            """ Escolha uma opção: \n
+        resposta = input(""" Escolha uma opção: \n
         [1] Somar 
         [2] Multiplicar 
         [3] Maior 
         [4] Novos numeros 
         [5] Sair do programa \n
-        Oque você deseja fazer?: """
-        )
+        Oque você deseja fazer?: """)
 
         if resposta == "1":
             print(f"A soma de {n1} + {n2} = {n1 + n2:.2f}.")

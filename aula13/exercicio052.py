@@ -1,7 +1,7 @@
-print('Descobrindo números primos.')
+print("Descobrindo números primos.")
 
 try:
-    numero = int(input('Digite um número inteiro: '))
+    numero = int(input("Digite um número inteiro: "))
     primo = True
 
     if numero <= 1:
@@ -18,4 +18,4 @@ try:
         print(f"{numero} não é primo!")
 
 except ValueError:
-    print('Digite um número inteiro')
+    print("Digite um número inteiro")

@@ -1,5 +1,5 @@
 ##Meu Jeito##
-'''print('Neste programa listaremos todos os númeors pares!')
+"""print('Neste programa listaremos todos os númeors pares!')
 try:
 
     inicio = int(input('Insira um numero para início: '))
@@ -21,24 +21,24 @@ try:
                     print(i)
 
 except ValueError:
-    print('Ocorreu um erro inesperado!')'''
+    print('Ocorreu um erro inesperado!')"""
 
 ### Correção ###
-print('Vamos fazer uma lista apenas com números pares!')
+print("Vamos fazer uma lista apenas com números pares!")
 
 try:
 
-    inicio = int(input('Insira um número para inicio: '))
-    fim = int(input('Insira um número para fim: '))
+    inicio = int(input("Insira um número para inicio: "))
+    fim = int(input("Insira um número para fim: "))
 
     if inicio >= fim:
-        print('Insira valores válidos!')
+        print("Insira valores válidos!")
     else:
-        print('Os números pares nesse intervalo são: ')
+        print("Os números pares nesse intervalo são: ")
         if inicio % 2 != 0:
             inicio += 1
         for i in range(inicio, fim + 1, 2):
             print(i)
 
 except ValueError:
-    print('Ocorreu um erro inesperado!')
+    print("Ocorreu um erro inesperado!")

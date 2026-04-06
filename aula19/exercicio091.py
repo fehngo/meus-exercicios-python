@@ -10,9 +10,7 @@ vencedor = list()
 ## Criar entrada de quantos jogadores participarão
 while True:
     try:
-        quantidade = int(
-            input("Quantas pessoas participaraão do jogo? (Mínimo 2 e Máximo 6): ")
-        )
+        quantidade = int(input("Quantas pessoas participaraão do jogo? (Mínimo 2 e Máximo 6): "))
         if 6 >= quantidade >= 2:
             break
         else:

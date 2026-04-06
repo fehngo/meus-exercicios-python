@@ -1,3 +1,3 @@
-#print('Olá mundo!')
-mensagem = str('Olá Mundo!')
+# print('Olá mundo!')
+mensagem = str("Olá Mundo!")
 print(mensagem)

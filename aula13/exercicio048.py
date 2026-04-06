@@ -1,5 +1,5 @@
 ### Meu Exercício ###
-'''print('Neste exercício iremos somar os números ímpares divisíveis por 3 que aparecerem na sua lista')
+"""print('Neste exercício iremos somar os números ímpares divisíveis por 3 que aparecerem na sua lista')
 
 try:
 
@@ -20,28 +20,28 @@ try:
     print(f'A soma dos números ímpares divisíveis por 3 é: {sum(divisiveis)}')
 
 except ValueError:
-    print('Ocorreu um erro inesperado!')'''
+    print('Ocorreu um erro inesperado!')"""
 
 ### Correção ###
 
-print('Nesse exercício iremos somar os números ímpares divisíveis por 3')
+print("Nesse exercício iremos somar os números ímpares divisíveis por 3")
 
 try:
 
-    inicio = int(input('Digite um número para iniciar: '))
-    fim = int(input('Digite um número para finalizar: '))
+    inicio = int(input("Digite um número para iniciar: "))
+    fim = int(input("Digite um número para finalizar: "))
     divisiveis = []
     cont = 0
     if inicio > fim:
-        print('Digite um inicio menor que o fim!')
+        print("Digite um inicio menor que o fim!")
     else:
         for c in range(inicio, fim + 1):
             if c % 2 != 0 and c % 3 == 0:
                 divisiveis.append(c)
                 cont += 1
-        print('Os números ímpares divisíveis por 3 são:')
+        print("Os números ímpares divisíveis por 3 são:")
         print(divisiveis)
-        print(f'A soma desses {cont} números é {sum(divisiveis)}')
+        print(f"A soma desses {cont} números é {sum(divisiveis)}")
 
 except ValueError:
-    print('Digite apenas números inteiros!')
+    print("Digite apenas números inteiros!")

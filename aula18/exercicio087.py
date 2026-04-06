@@ -4,9 +4,7 @@ for linha in range(3):
     for coluna in range(3):
         while True:
             try:
-                numero = int(
-                    input(f"Digite um número para posição [{linha}, {coluna}]: ")
-                )
+                numero = int(input(f"Digite um número para posição [{linha}, {coluna}]: "))
                 break
             except ValueError:
                 print("Insira apenas números!")

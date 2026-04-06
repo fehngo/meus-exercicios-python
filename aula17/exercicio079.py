@@ -31,7 +31,4 @@ while True:
         continue
 
 
-print(
-    f"Você digitou os valores {sorted(lista)}.\n"
-    "Eles estão ordenados em ordem crescente!"
-)
+print(f"Você digitou os valores {sorted(lista)}.\n" "Eles estão ordenados em ordem crescente!")

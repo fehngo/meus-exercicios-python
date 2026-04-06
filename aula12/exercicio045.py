@@ -1,4 +1,4 @@
-'''from random import choice
+"""from random import choice
 
 print('-' * 20)
 print('Vamos Jogar Pedra, Papel, Tesoura.')
@@ -33,37 +33,41 @@ try:
             print(f'Empatamos, nós dois escolhemos {computador}.')
 
 except ValueError:
-    print('Valores Invalidos!')'''
+    print('Valores Invalidos!')"""
 
 from random import choice
 from time import sleep
 
-print('=' * 20)
-print('Vamos jogar Pedra, Papel ou Tesoura')
-print('=' * 20)
+print("=" * 20)
+print("Vamos jogar Pedra, Papel ou Tesoura")
+print("=" * 20)
 
 try:
 
-    opcoes = ['Pedra', 'Papel', 'Tesoura']
-    usuario = input('Escolha sua jogada! \nPedra, Papel ou Tesoura: ').strip() .title()
+    opcoes = ["Pedra", "Papel", "Tesoura"]
+    usuario = input("Escolha sua jogada! \nPedra, Papel ou Tesoura: ").strip().title()
     computador = choice(opcoes)
 
     if usuario not in opcoes:
-        print('Você escolheu uma opção inválida!')
+        print("Você escolheu uma opção inválida!")
     else:
-        print('JO')
+        print("JO")
         sleep(0.7)
-        print('KEN')
+        print("KEN")
         sleep(0.7)
-        print('PO!')
+        print("PO!")
         sleep(0.7)
-        print(f'Eu escolhi {computador}')
+        print(f"Eu escolhi {computador}")
         if computador == usuario:
-            print('Empatamos')
-        elif (usuario == 'Pedra' and computador == 'Tesoura') or (usuario == 'Papel' and computador == 'Pedra') or (usuario == 'Tesoura' and computador == 'Papel'):
-            print('Você Venceu!')
+            print("Empatamos")
+        elif (
+            (usuario == "Pedra" and computador == "Tesoura")
+            or (usuario == "Papel" and computador == "Pedra")
+            or (usuario == "Tesoura" and computador == "Papel")
+        ):
+            print("Você Venceu!")
         else:
-            print('Eu Venci!')
+            print("Eu Venci!")
 
 except ValueError:
-    print('Valores Invalidos!')
+    print("Valores Invalidos!")

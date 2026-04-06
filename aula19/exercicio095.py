@@ -52,9 +52,7 @@ print(f'{"Nº":^10}|{"Nome":^16}|{"Gols":^26}|{"Total":^10}')
 separalinha("-=")
 for index, jogador in enumerate(jogadores):
     gols_str = ", ".join(map(str, jogador["Gols"]))
-    print(
-        f'{index + 1:^10}| {jogador["Nome"]:<15}| {gols_str:<25}|{jogador["Total"]:^10}'
-    )
+    print(f'{index + 1:^10}| {jogador["Nome"]:<15}| {gols_str:<25}|{jogador["Total"]:^10}')
 # Detalha jogador
 while True:
     while True:

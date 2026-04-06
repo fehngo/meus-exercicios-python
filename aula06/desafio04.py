@@ -1,8 +1,10 @@
-print('O desafio de hora sera identificar o oque foi digitado e apresentar todas informaões sobre ele.')
-primeiro = input('Digite algo para começarmos: ')
-print('Qual o tipo de classe do valor digitado? ',type(primeiro))
-print('O valor digitado é numérico ? ',primeiro.isnumeric())
-print('O valor digitado é alfanumérico? ',primeiro.isalnum())
-print('O valor digitado é alfa ? ',primeiro.isalpha())
-print('O valor está escrito em caixa baixa? ',primeiro.islower())
-print('A valor está escrito em caixa alta ? ',primeiro.isupper())
+print(
+    "O desafio de hora sera identificar o oque foi digitado e apresentar todas informaões sobre ele."
+)
+primeiro = input("Digite algo para começarmos: ")
+print("Qual o tipo de classe do valor digitado? ", type(primeiro))
+print("O valor digitado é numérico ? ", primeiro.isnumeric())
+print("O valor digitado é alfanumérico? ", primeiro.isalnum())
+print("O valor digitado é alfa ? ", primeiro.isalpha())
+print("O valor está escrito em caixa baixa? ", primeiro.islower())
+print("A valor está escrito em caixa alta ? ", primeiro.isupper())

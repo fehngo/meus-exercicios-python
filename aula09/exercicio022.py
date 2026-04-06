@@ -1,9 +1,9 @@
 from dataclasses import replace
 
-nome = str(input('Digite seu nome completo: '))
-print('Analisando seu nome...')
-print('Seu nome em maiúsculas é {}' .format(nome.upper()))
-print('Seu nome em minusculas é {}' .format(nome.lower()))
-print('Seu nome tem ao todo {} letras' .format(len(nome) - nome.count(' ')))
-#print('Seu nome tem ao todo {} letras' .format(len(nome.replace(' ', ''))))
-print('seu primeiro nome é {}, e ele tem {} letras' .format(nome.split()[0], len(nome.split()[0])))
+nome = str(input("Digite seu nome completo: "))
+print("Analisando seu nome...")
+print("Seu nome em maiúsculas é {}".format(nome.upper()))
+print("Seu nome em minusculas é {}".format(nome.lower()))
+print("Seu nome tem ao todo {} letras".format(len(nome) - nome.count(" ")))
+# print('Seu nome tem ao todo {} letras' .format(len(nome.replace(' ', ''))))
+print("seu primeiro nome é {}, e ele tem {} letras".format(nome.split()[0], len(nome.split()[0])))
